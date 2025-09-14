@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:instgram_clone_flutter/Screens/Signup/signup_screen.dart';
 import 'package:instgram_clone_flutter/widgets/uihelper.dart';
+import '../BottonNav/bottonnav.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -45,7 +46,15 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
               ],
             ),
-            UiHelper.CustomButton(callback: () {}, buttonname: "Login"),
+            UiHelper.CustomButton(
+              callback: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => BottonnavScreen()),
+                );
+              },
+              buttonname: "Login",
+            ),
 
             SizedBox(height: 20),
 
