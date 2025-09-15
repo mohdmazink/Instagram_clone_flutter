@@ -5,7 +5,6 @@ import 'package:instgram_clone_flutter/Screens/HomeScreen/home_screen.dart';
 import 'package:instgram_clone_flutter/Screens/PostScreen/post_screen.dart';
 import 'package:instgram_clone_flutter/Screens/ProfileScreen/profile_screen.dart';
 import 'package:instgram_clone_flutter/Screens/SearchScreen/search_screen.dart';
-import 'package:instgram_clone_flutter/widgets/uihelper.dart';
 
 class BottonnavScreen extends StatefulWidget {
   const BottonnavScreen({super.key});
@@ -41,18 +40,18 @@ class _BottonnavState extends State<BottonnavScreen> {
         },
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-          BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Home'),
+          BottomNavigationBarItem(icon: Icon(Icons.search), label: 'Search'),
           BottomNavigationBarItem(
             icon: Icon(CupertinoIcons.plus_app),
-            label: 'Home',
+            label: 'Post',
           ),
           BottomNavigationBarItem(
             icon: Icon(CupertinoIcons.heart),
-            label: 'Home',
+            label: 'Heart',
           ),
           BottomNavigationBarItem(
             icon: Icon(CupertinoIcons.person_fill),
-            label: 'Home',
+            label: 'Profile',
           ),
         ],
       ),
